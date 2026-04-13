@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Chic - DTC Brand Redesign Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #FAFAFA;
+            --text-main: #2C2C2C;
+            --text-muted: #666666;
+            --accent-color: #D4AF37; /* 优雅的金色 */
+            --border-color: #EAEAEA;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            margin-top: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            margin-bottom: 6rem;
+        }
+        .header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            letter-spacing: 1px;
+        }
+        .header p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Section Styling */
+        .section {
+            margin-bottom: 8rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 6rem;
+        }
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .section-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .section-header p {
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        /* Comparison Grid */
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .card {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            text-align: center;
+        }
+        
+        .card.after h3 {
+            color: var(--text-main);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            border: 1px solid var(--border-color);
+            display: block;
+        }
+
+        /* Full Page Snapshot Specific */
+        .full-page-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+        .full-page-grid img {
+            width: 100%;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .comparison-grid, .full-page-grid {
+                grid-template-columns: 1fr;
+            }
+            .header h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    
+    <header class="header">
+        <h1>Retro Chic</h1>
+        <p>DTC Brand E-commerce Redesign & UX Optimization</p>
+    </header>
+
+    <section class="section">
+        <div class="section-header">
+            <h2>信息架构重塑：一级导航与二级菜单</h2>
+            <p><strong>优化策略：</strong>优化信息架构，将核心品类前置，提升浏览效率。二级菜单采用“左侧结构化列表 + 右侧视觉化穿搭”布局，利用高品质模特图直观展现精选单品，增强视觉冲击力，有效提升用户的探索欲与点击率。</p>
+        </div>
+        <div class="comparison-grid">
+            <div class="card before">
+                <h3>Before</h3>
+                <img src="旧二级菜单.webp" alt="旧版二级菜单">
+            </div>
+            <div class="card after">
+                <h3>After</h3>
+                <img src="新二级菜单.webp" alt="新版二级菜单">
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-header">
+            <h2>首屏视觉聚焦：Hero Banner</h2>
+            <p><strong>优化策略：</strong>摒弃冗杂的轮播图与视频，采用极简的单幅高质量大图。优化网站加载性能，契合“黄金三秒”原则。配合优化的品牌文案与双重 CTA 按钮，塑造更专业、高级的品牌质感。</p>
+        </div>
+        <div class="comparison-grid">
+            <div class="card before">
+                <h3>Before</h3>
+                <img src="旧banner.webp" alt="旧版Hero">
+            </div>
+            <div class="card after">
+                <h3>After</h3>
+                <img src="新banner.webp" alt="新版Hero">
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-header">
+            <h2>首页模块焕新：业务导向与品牌叙事</h2>
+            <p><strong>优化策略：</strong>梳理并重构页面模块布局。优化商品列表样式提升电商转化；新增 Collection 视觉图块强化主打系列；引入品牌故事与工艺板块深化信任感；增设 UGC 模块利用社交背书促进转化。</p>
+        </div>
+        <div class="comparison-grid" style="margin-bottom: 2rem;">
+            <div class="card before" style="grid-column: 1 / -1; max-width: 800px; margin: 0 auto;">
+                <h3>Draft Wireframe</h3>
+                <img src="Restructuring home page constructure drafts.png" alt="重构草图">
+            </div>
+        </div>
+        <div class="comparison-grid">
+            <div class="card before">
+                <h3>Before</h3>
+                <img src="旧首页架构.webp" alt="旧版首页架构">
+            </div>
+            <div class="card after">
+                <h3>After</h3>
+                <img src="新首页架构.webp" alt="新版首页架构">
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-header">
+            <h2>全局概览：Full Page Snapshot</h2>
+            <p>从头至尾的视觉一致性与体验升级，打造兼具美感与高转化率的现代化 DTC 独立站。</p>
+        </div>
+        <div class="full-page-grid">
+            <div class="card before">
+                <h3>BEFORE</h3>
+                <img src="整体布局-旧.webp" alt="整体布局-旧">
+            </div>
+            <div class="card after">
+                <h3>AFTER</h3>
+                <img src="整体布局-新.webp" alt="整体布局-新">
+            </div>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
